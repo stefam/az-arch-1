@@ -1,4 +1,4 @@
-az-app-fd-vnet-bas-vm-sql-st
+az-app-fd-vnet-bas-vm-sql-st \
 az-arch-1
 
 - dotnet CLI
@@ -33,12 +33,12 @@ az-arch-1
 
 
 Create app
-	git clone https://github.com/stefam/az-arch-1
-	cd az-arch-1
-	dotnet new webapp -o app --language "C#" --framework net5.0
-	dotnet new sln
-	dotnet sln add ./app/app.csproj
-
+	git clone https://github.com/stefam/az-arch-1 \
+	cd az-arch-1 \
+	dotnet new webapp -o app --language "C#" --framework net5.0 \
+	dotnet new sln \
+	dotnet sln add ./app/app.csproj \
+\
 Important:
 https://docs.microsoft.com/en-us/azure/frontdoor/private-link
 https://samcogan.com/service-endpoints-and-private-link-whats-the-difference/
