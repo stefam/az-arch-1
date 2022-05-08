@@ -24,25 +24,25 @@ namespace app.Pages
         {
             try
             {
-                string connectionString = "Server=rog-workstation;Database=easyManageDb;User Id=stefam; Password=123456;";
+                //string connectionString = "Server=rog-workstation;Database=easyManageDb;User Id=stefam; Password=123456;";
 
-                string sql = "SELECT [NOME] FROM [easyManageDb].[dbo].[ATIVO]";
+                //string sql = "SELECT [NOME] FROM [easyManageDb].[dbo].[ATIVO]";
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
+                //using (SqlConnection connection = new SqlConnection(connectionString))
+                //{
+                //    connection.Open();
 
-                    using (var command = new SqlCommand(sql, connection))
-                    {
-                        using (var reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                myList.Add(reader.GetString(0));
-                            }
-                        }
-                    }
-                }
+                //    using (var command = new SqlCommand(sql, connection))
+                //    {
+                //        using (var reader = command.ExecuteReader())
+                //        {
+                //            while (reader.Read())
+                //            {
+                //                myList.Add(reader.GetString(0));
+                //            }
+                //        }
+                //    }
+                //}
             }
             catch (Exception ex)
             {
