@@ -13,6 +13,7 @@ namespace app.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         public List<string> myList = new List<string>();
+        public string error = string.Empty;
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -45,7 +46,7 @@ namespace app.Pages
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, ex.Message);
+                error = $"{ex}";
             }
         }
     }
