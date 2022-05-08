@@ -24,7 +24,7 @@ namespace app.Pages
         {
             try
             {
-                string connectionString = "Server=localhost;Database=easyManageDb;Integrated Security=true";
+                string connectionString = "Server=localhost;Database=easyManageDb;User Id=stefam; Password=123456";
 
                 string sql = "SELECT [NOME] FROM [easyManageDb].[dbo].[ATIVO]";
 
