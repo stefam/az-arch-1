@@ -46,6 +46,7 @@ namespace app.Pages
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.ToString());
                 error = $"{ex}";
             }
         }
