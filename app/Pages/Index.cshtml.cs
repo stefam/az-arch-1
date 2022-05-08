@@ -24,7 +24,7 @@ namespace app.Pages
         {
             try
             {
-                string connectionString = "Server=ROG-WORKSTATION\\SQLEXPRESS;Database=easyManageDb;Integrated Security=true";
+                string connectionString = "Server=localhost;Database=easyManageDb;Integrated Security=true";
 
                 string sql = "SELECT [NOME] FROM [easyManageDb].[dbo].[ATIVO]";
 
