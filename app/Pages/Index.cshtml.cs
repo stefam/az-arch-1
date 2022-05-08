@@ -24,7 +24,7 @@ namespace app.Pages
         {
             try
             {
-                string connectionString = "Server=rog-workstation\\sqlexpress;Database=easyManageDb;User Id=stefam; Password=123456;";
+                string connectionString = "Server=rog-workstation;Database=easyManageDb;User Id=stefam; Password=123456;";
 
                 string sql = "SELECT [NOME] FROM [easyManageDb].[dbo].[ATIVO]";
 
