@@ -46,7 +46,7 @@ namespace app.Pages
             }
             catch (Exception ex)
             {
-                error = $"{ex}";
+                error = $"error: {ex}";
             }
         }
     }
